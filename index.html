@@ -68,20 +68,13 @@
             <h2>サンプル1</h2>
             <p>これはサンプルの内容です。ここには情報や文章を追加できます。</p>
 
-            <!-- Begin TimeRex Widget --> 
-            <div id="timerex_calendar" data-url="https://timerex.net/s/yasuhiro.suzuki3_0a62/217bdd37"></div>
-            <script id="timerex_embed" src="https://asset.timerex.net/js/embed.js"></script>
+            <div id="eeasy-widget"></div>
+            <script type="text/javascript" src="https://js.eeasy.jp/embed" async></script>
             <script type="text/javascript">
-                TimerexCalendar({
-                    'guest_company' : 'Mixtend Inc.',
-                    'guest_name' : 'Tomohiro Kitano',
-                    'guest_email' : 'xxxxxxxx@test.com',
-                    'guest_comment' : 'Hello',
-                    'locale': 'ja',
-                    '1234567890abc_1': '01-01-1990' // Date of birth
-                });
+              window.addEventListener('eeasy:load', () => {
+                EeasyWidget('https://persol-innovation.eeasy.jp/lptest');
+              }, { once: true });
             </script>
-            <!-- End TimeRex Widget -->
         </section>
     </div>
 
